@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jordan Alvarez — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Jordan Alvarez — projects, skills, and contact info.">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (for footer/contact icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Custom styles (kept minimal — real styling is Bootstrap classes) -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#top">Jordan Alvarez</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== About Me ===== -->
+    <section id="about" class="py-5 border-bottom">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-4 text-center">
+            <img src="images/profile-placeholder.svg"
+                 alt="Illustrated placeholder avatar of Jordan Alvarez, a computer science student"
+                 class="img-fluid rounded-circle border border-3 border-primary"
+                 width="240" height="240">
+          </div>
+          <div class="col-md-8">
+            <h1>Jordan Alvarez</h1>
+            <h2 class="h4 text-secondary">Computer Science Student & Aspiring Frontend Developer</h2>
+            <p class="lead mt-3">
+              I'm a third-year Computer Science student who loves turning ideas into working
+              websites and apps. I'm most interested in frontend development and UI design,
+              and I'm currently looking for internship opportunities where I can keep learning
+              and build things that matter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="py-5 border-bottom bg-light">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="text-secondary">Tools and technologies I've worked with:</p>
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <span class="badge text-bg-primary fs-6 py-2 px-3">SQL</span>
+          <span class="badge text-bg-primary fs-6 py-2 px-3">GitHub</span>
+          <span class="badge text-bg-secondary fs-6 py-2 px-3">Java</span>
+          <span class="badge text-bg-secondary fs-6 py-2 px-3">Python</span>
+          <span class="badge text-bg-secondary fs-6 py-2 px-3">C#</span>
+          <span class="badge text-bg-success fs-6 py-2 px-3">Canva</span>
+          <span class="badge text-bg-success fs-6 py-2 px-3">Google Sheets</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects / Accomplishments ===== -->
+    <section id="projects" class="py-5 border-bottom">
+      <div class="container">
+        <h2>Projects &amp; Accomplishments</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mt-1">
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Campus Event Finder</h3>
+                <p class="card-text flex-grow-1">
+                  A responsive web app that lets students browse and RSVP to campus events,
+                  built with HTML, CSS, and JavaScript.
+                </p>
+                <a href="https://github.com/your-username/campus-event-finder"
+                   class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">
+                  View Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Budget Tracker CLI</h3>
+                <p class="card-text flex-grow-1">
+                  A command-line Python tool for tracking personal expenses and generating
+                  monthly spending summaries.
+                </p>
+                <a href="https://github.com/your-username/budget-tracker-cli"
+                   class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">
+                  View Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="py-5 border-bottom bg-light">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="text-secondary">
+          Have an opportunity or just want to say hi? Send me a message, or reach me directly
+          by email.
+        </p>
+
+        <a href="mailto:jordan.alvarez@example.com"
+           class="btn btn-info text-white mb-4">
+          <i class="bi bi-envelope-fill"></i> Email Me
+        </a>
+
+        <form class="row g-3 col-lg-8" action="#" method="post">
+          <div class="col-12">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; 2026 Jordan Alvarez. All rights reserved.</p>
+      <div class="fs-4">
+        <a href="https://github.com/your-username" class="text-light me-3"
+           target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:jordan.alvarez@example.com" class="text-light" aria-label="Email">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle (needed for navbar collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
